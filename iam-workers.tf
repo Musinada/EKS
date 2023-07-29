@@ -1,5 +1,6 @@
-resource "aws_iam_role" "demo-node" {
-  name = "terraform-eks-demo-node"
+resource "aws_iam_role" "worker-node-1" "worker-node-2" {
+  name = "terraform-eks-worker-node-1"
+  name = "terraform-eks-worker-node-2"
 
   assume_role_policy = <<POLICY
 {
@@ -14,6 +15,7 @@ resource "aws_iam_role" "demo-node" {
     }
   ]
 }
+
 POLICY
 
 }
