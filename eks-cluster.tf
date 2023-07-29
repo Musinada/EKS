@@ -70,6 +70,3 @@ data "aws_eks_cluster_auth" "cluster" {
 }
 
 
-
-# For EKS Cluster creation, I have used Terraform AWS EKS Module.
-# This will create 2 worker groups (worker_group_one & worker_group_two) with the desired capacity of 3 instances of type t2.medium.
